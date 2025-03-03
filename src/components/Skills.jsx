@@ -30,16 +30,10 @@ const Skills = () => {
     
     {
       name:"FIREBASE",
-      logo: "logo-firebase",
+      logo: "C language",
      level: "Beginner",
       count: 40,
     },
-    {
-      name:"NODE JS",
-      logo: "logo-nodejs",
-      level: "Beginner",
-      count: 40,
-    }
   ];
   return (
     <section id="skills" className="py-10 bg-gray-800 relative">
