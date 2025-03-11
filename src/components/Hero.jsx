@@ -11,7 +11,7 @@ const Hero = () => {
   const contactRef = useRef(null);
 
   const scrollToContact = () => {
-    contactRef.current.scrollIntoView({ behavior: 'smooth' });
+    contactRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
   const social_media = [
@@ -29,14 +29,10 @@ const Hero = () => {
       {/* Left Side - Image */}
       <div className="flex-1 flex justify-center md:justify-center h-full">
         <div className="w-60 h-60 md:w-80 md:h-80 overflow-hidden rounded-full border-4 border-cyan-600 shadow-2xl">
-          <img 
-            src={Image} 
-            alt="Preeti Diwakar" 
-            className="w-full h-full object-cover"
-          />
+          <img src={Image} alt="Preeti Diwakar" className="w-full h-full object-cover" />
         </div>
       </div>
-      
+
       {/* Right Side - Text */}
       <div className="flex-1 md:text-left text-center px-6 md:px-10">
         <h1 className="md:text-6xl text-4xl font-extrabold text-white">
@@ -44,14 +40,15 @@ const Hero = () => {
           My Name is <span className="text-cyan-400">Preeti Diwakar</span>
         </h1>
         <h4 className="md:text-3xl text-xl font-semibold mt-4 text-gray-400">
-          <Type/>
+          <Type />
         </h4>
         <p className="text-gray-300 text-lg mt-4 leading-relaxed">
-          I am passionate about creating <span className="text-cyan-400 font-semibold">efficient</span> and <span className="text-cyan-400 font-semibold">user-friendly</span> web applications.
+          I am passionate about creating <span className="text-cyan-400 font-semibold">efficient</span> and{" "}
+          <span className="text-cyan-400 font-semibold">user-friendly</span> web applications.
           With a focus on problem-solving and continuous learning, I build solutions that drive results and improve user experience.
         </p>
 
-        <button 
+        <button
           className="mt-8 px-6 py-3 bg-cyan-600 hover:bg-cyan-700 text-white text-lg font-semibold rounded-lg shadow-md transition duration-300"
           onClick={scrollToContact}
         >
@@ -71,9 +68,16 @@ const Hero = () => {
               <ion-icon name={icon}></ion-icon>
             </a>
           ))}
+
+          {/* Play Icon */}
+          <img
+            src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.5.0/svg/logo-play.svg"
+            alt="play icon"
+            className="w-8 h-8"
+          />
         </div>
       </div>
-      
+
       <div ref={contactRef}></div>
     </section>
   );
