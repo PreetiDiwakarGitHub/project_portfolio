@@ -28,11 +28,13 @@ const Hero = () => {
     >
       {/* Left Side - Image */}
       <div className="flex-1 flex justify-center md:justify-center h-full">
-        <img 
-          src={Image} 
-          alt="Preeti Diwakar" 
-          className="w-72 h-72 md:w-96 md:h-96 object-cover rounded-full border-4 border-cyan-600 shadow-2xl"
-        />
+        <div className="w-60 h-60 md:w-80 md:h-80 overflow-hidden rounded-full border-4 border-cyan-600 shadow-2xl">
+          <img 
+            src={Image} 
+            alt="Preeti Diwakar" 
+            className="w-full h-full object-cover"
+          />
+        </div>
       </div>
       
       {/* Right Side - Text */}
